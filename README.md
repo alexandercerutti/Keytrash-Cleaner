@@ -3,7 +3,7 @@ Utility for OS X to clean USB keys Trash (hidden) folder
 
 #####Description
 
-As many OS X users knows, when you delete "permanently" a file placed in a USB Key, it will still take up space. That's because Apple's OS creates in Mac OS formatted keys, an hidden folder called .Trashes / 501. So, I made this script to delete this Trash folder content easily.
+As many OS X users knows, when you delete "permanently" a file placed in a USB Key, it will still take up space. That's because Apple's OS creates in Mac OS formatted keys, an hidden folder called .Trashes / 501. So, I made this script to delete this Trash folder content easily without erase completely the USB key.
 
 #####Instructions
 
