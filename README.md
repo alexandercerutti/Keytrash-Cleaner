@@ -7,8 +7,8 @@ As many OS X users knows, when you delete "permanently" a file placed in a USB K
 
 #####Instructions
 
-Download this script and place it inside the root folder of your USB key and move with the terminal to the folder _/Volumes/**your_USBkey_name**_. Then execute the script like below. If the script, once executed, will found that it isn't in the root, will ask to move itself a folder up and will execute itself again.
-You can ask the script to show every file found, if you want to not be deleted. How? Execute the script with the parameter **-c**, like this:
+Download this script, place it inside the root folder of your USB key and move with the terminal to the folder _/Volumes/**your_USBkey_name**_. Then execute the script like below. If the script, once executed, will found that it isn't in the root, will ask to move itself a folder up and to execute itself again.
+You can ask the script to show every file found in the trash folder, and choose if you want to deleted them. How? Execute the script with the parameter **-c**, like this:
 
       ./keytrashCleaner.sh -c
 
