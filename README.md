@@ -11,5 +11,5 @@ Download this script and place it inside the root folder of your USB key and mov
 You can ask the script to show every file found, if you want to not be deleted. How? Execute the script with the parameter **-c**, like this:
 
       ./keytrashCleaner.sh -c
-      
+
 Thank you for using my script! :smile:
