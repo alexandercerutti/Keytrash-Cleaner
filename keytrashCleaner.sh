@@ -2,11 +2,12 @@
 # To let it work properly, it must be placed in the usb device root folder.
 # Thanks to Stefano Belli
 clear
+bs=`basename "$0"`
 if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 	if [ -d ".Trashes" ]; then
 		echo "*****************************************************************\n"
 		echo "  Welcome into KeytrashCleaner.sh for OS X, an utility that\n  fully delete USB keys trashed files on macs.\n  Please, insert your system password to continue.\n"
-		echo "*****************************************************************\n\n  >>"
+		echo "*****************************************************************\n\n"
 		sudo chmod -R 777 .Trashes
 		echo "\nThank you. Directory permissions changed."
 		cd .Trashes
@@ -33,9 +34,9 @@ if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 	else
 		read -p "Trash folder not found. It seems that the script is not placed in the root folder. Want me to move myself inside up of one folder? [y/n] >> " x
 		if echo $x | grep "^[yYsS]"; then
-			sudo mv keytrashCleaner.sh ../
+			sudo mv $bs ../
 			cd .. ;
-			./keytrashCleaner.sh
+			./$bs
 		else
 			echo "Okay bye.";
 		fi
