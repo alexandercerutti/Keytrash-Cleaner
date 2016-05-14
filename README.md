@@ -20,3 +20,4 @@ or
 **Quite erasing will NOT ask you anything.**
 
 Thank you for using my script! :smile:
+I want to thanks __Stefano Belli__ for the help.

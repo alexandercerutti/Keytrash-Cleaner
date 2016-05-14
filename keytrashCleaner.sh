@@ -1,5 +1,6 @@
 #!/bin/sh
 # To let it work properly, it must be placed in the usb device root folder.
+# Thanks to Stefano Belli
 clear
 if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 	if [ -d ".Trashes" ]; then
