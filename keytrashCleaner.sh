@@ -43,5 +43,5 @@ if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 		exit;
 	fi
 else
-	echo "Script is not places inside a USB device but inside your pc. Please, move it in the root of your USB key.";
+	echo "Script is not placed inside a USB drive but inside your pc. Please, move it in the root of your USB key.";
 fi
