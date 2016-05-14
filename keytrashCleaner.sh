@@ -31,11 +31,11 @@ if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 		fi
 		sudo chmod -R 333 .Trashes
 	else
-		read -p "Trash folder not found. It seems that the script is not placed in the root folder. Want me to move myself inside up of one folder? (y/n)" x;
-		if [ x in [yY][sS] ]; then
-			sudo mv keytrash_cleaner.sh ../
+		read -p "Trash folder not found. It seems that the script is not placed in the root folder. Want me to move myself inside up of one folder? [y/n] >> " x
+		if echo $x | grep "^[yYsS]"; then
+			sudo mv keytrashCleaner.sh ../
 			cd .. ;
-			./keytrash_cleaner.sh
+			./keytrashCleaner.sh
 		else
 			echo "Okay bye.";
 		fi
