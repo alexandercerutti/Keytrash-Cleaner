@@ -1,23 +1,21 @@
 #!/bin/sh
 # To let it work properly, it must be placed in the usb device root folder.
-CURR_PATH=`pwd`
-if [ $CURR_PATH =~ "Volumes" ]; then
+clear
+if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 	if [ -d ".Trashes" ]; then
-		echo "Trash folder found. Goin' on."
-		echo "*****************************************************************"
-		echo "* INSERT YOUR SYSTEM PASSWORD AND PRESS ENTER, PLEASE.		*"
-		echo "*****************************************************************"
+		echo "*****************************************************************\n"
+		echo "  Welcome into KeytrashCleaner.sh for OS X, an utility that\n  fully delete USB keys trashed files on macs.\n  Please, insert your system password to continue.\n"
+		echo "*****************************************************************\n\n  >>"
 		sudo chmod -R 777 .Trashes
-		echo ">> Thank you. Directory permissions changed."
+		echo "\nThank you. Directory permissions changed."
 		cd .Trashes
 
 		if [ -d 501 ]; then
 			cd 501;
 		fi
-		echo "Starting file cleaning"
-		if [ "$1" == "-c" ]; then
-			echo ">> Files inside the Trash folder:"
-			echo
+		echo "Starting file cleaning."
+		if [ "$1" != "-q" -a "$1" != "--quite" ]; then
+			echo "Files inside the Trash folder:\n"
 			ls
 			echo
 			sudo rm -rfi *
