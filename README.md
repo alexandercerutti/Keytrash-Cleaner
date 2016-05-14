@@ -7,7 +7,16 @@ As many OS X users knows, when you delete "permanently" a file placed in a USB K
 
 #####Instructions
 
-Download this script, place it inside the root folder of your USB key and move with the terminal to the folder _/Volumes/**your_USBkey_name**_. Then execute the script like below. If the script, once executed, will found that it isn't in the root, will ask to move itself a folder up and to execute again.
+Download this script, place it inside the root folder of your USB key and move with the terminal to the folder _/Volumes/**USBkey_name**_.
+For unix/unix-like terminal rules, if your usb key (or folder) has spaces in its name, you can navigate reach it by these ways:
+
+      /Volumes/SanDisk\ UltraFit \32GB
+
+or
+
+      /Volumes/"SanDisk UltraFit 32GB"
+
+Then execute the script like below. If the script, once executed, will found that it isn't in the root, will ask to move itself a folder up and to execute again.
 By default, it will show every file inside .Trashes that are going to be deleted. For each file, it will be asked if the user wants it to be erased [y/n].
 You can delete everything _quitely_ by starting the script with the following two parameters:
 
