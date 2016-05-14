@@ -33,7 +33,9 @@ I want to thanks [Stefano Belli](https://github.com/StefanoBelli) for the help.
 
 ######Script screenshot:
 Classic mode:
+
 ![screen](http://i.imgur.com/P60y3zH.png)
 
 --quite mode:
+
 ![screen](http://i.imgur.com/ih6MGvI.png)
