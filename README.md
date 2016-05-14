@@ -26,7 +26,7 @@ or
 
       ./keytrashCleaner.sh --quite
 
-**Quite erasing will NOT ask you anything.**
+**Quite erasing will NOT ask you any confirm.**
 
 Thank you for using my script! :smile:
 I want to thanks [Stefano Belli](https://github.com/StefanoBelli) for the help.
