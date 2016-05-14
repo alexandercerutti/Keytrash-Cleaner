@@ -2,7 +2,7 @@
 # To let it work properly, it must be placed in the usb device root folder.
 # Thanks to Stefano Belli
 clear
-bs=`basename "$0"`
+bs=$(basename "$0")
 if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 	if [ -d ".Trashes" ]; then
 		echo "*****************************************************************\n"
