@@ -1,5 +1,5 @@
 # Keytrash-Cleaner
-Utility for Mac OS-formatted USB keys to empty the hidden Trash folder
+Utility for USB keys to empty the hidden Trash folder created by OS X
 
 #####Description
 
