@@ -15,7 +15,7 @@ if pwd | grep Volumes >>/dev/null 2>/dev/null; then
 		if [ -d 501 ]; then
 			cd 501;
 		fi
-		echo "Starting file cleaning (may take a while, depending on files weight).."
+		echo "Starting file cleaning (may take a while, depending on files weight)."
 		if [ "$1" != "-q" -a "$1" != "--quite" ]; then
 			echo "Files inside the Trash folder:\n"
 			ls
