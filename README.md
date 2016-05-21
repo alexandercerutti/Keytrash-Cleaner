@@ -3,7 +3,7 @@ Utility for USB keys to empty the hidden Trash folder created by OS X
 
 #####Description
 
-As many OS X users knows, when you delete "permanently" a file placed in a USB Key, it will still take up space. That's because Apple's OS creates an hidden folder called **.Trashes**. So, I made this script to fully empty **.Trashes** folder and fully delete deleted files.
+As many OS X users knows, when you delete "permanently" a file placed in a USB Key, it will still take up space. That's because the Apple's OS creates an hidden folder called **.Trashes** that is linked to OS X trash folder on usb connection: to delete those files, you have to empty the main mac trash. I don't like this way, so I made this script to let a fully emptying of that **.Trashes** folder and fully delete 'deleted' files.
 
 #####Instructions
 
